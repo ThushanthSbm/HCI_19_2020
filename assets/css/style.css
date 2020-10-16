@@ -1,0 +1,215 @@
+* {
+	margin: 0px; 
+	padding: 0px; 
+	box-sizing: border-box;
+}
+@keyframes slideleft {
+    from {
+        background-position: 0%;
+    }
+    to {
+        background-position: 90000%;
+    }
+}
+
+@-webkit-keyframes slideleft {
+    from {
+        background-position: 0%;
+    }
+    to {
+        background-position: 90000%;
+    }
+}
+
+
+body, html {
+	height: 100%;
+    font-family: 'Poppins', sans-serif;
+    background-image: url('../img/bg.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: repeat-x;
+    animation: slideleft 20000s infinite linear;
+    -webkit-animation: slideleft 20000s infinite linear;
+    background-size: cover;
+	-webkit-background-size:cover;
+	-moz-background-size:cover; 
+    background-attachment: fixed;
+    position: relative;
+	min-height: 100vh;
+	
+}
+.bg-layer {
+    background: rgba(0, 0, 0, 0.7);
+	min-height: 100vh;
+}
+
+h1,h2,h3,h4,h5,h6 {
+	margin: 0px;
+}
+
+p {
+	font-family: 'Poppins', sans-serif;;
+	font-size: 14px;
+	line-height: 1.7;
+	color: #666666;
+	margin: 0px;
+}
+
+.container {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    background: rgb(255 255 255 / 8%);
+
+}
+
+.main-container {
+        max-width: 700px;
+        width: 530px;
+	margin: 0 auto;
+	position: relative;
+	z-index: 999;
+	padding: 3em 2em;
+	background: rgba(255, 255, 255, 0.04);
+	-webkit-box-shadow: -1px 4px 28px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: -1px 4px 28px 0px rgba(0,0,0,0.75);
+	box-shadow: -1px 4px 28px 0px rgba(0,0,0,0.75);
+}
+
+.main-container .left,  .main-container .right {
+
+    background-color: aquamarine;
+    height: 300px;
+    width: 50%;
+}
+
+.input-box {
+    font-family: 'Poppins', sans-serif !important;
+    display: block;
+    width: 100%;
+    background: transparent;
+    font-family: Poppins-Regular;
+    font-size: 15px;
+    color: #fff;
+    line-height: 1.2;
+    padding: 15px 0 0 0;
+    outline: none;
+    margin: 10px 0;
+    border: none;
+}
+
+.input-box::placeholder{
+    color: #fff;
+}
+
+.btn {
+    background: #007cc0;
+    font-family: 'Poppins', sans-serif;;
+    padding: 10px 60px;
+    border-radius: 50px;
+    border: none;
+    transition: linear 0.2s;
+    font-size: 14px;
+}
+
+.btn-social {
+    background-color: white;
+    font-family: 'Poppins', sans-serif;;
+    padding: 10px 10px;
+    width: 100px;
+    border-radius: 50px;
+    border: none;
+    transition: linear 0.5s;
+    font-size: 14px;
+    margin-left: 10px;
+}
+
+.btn:hover , .fb:hover, .tw:hover, .gl:hover {
+    cursor: pointer;
+    box-shadow: 0 0 11px rgba(33,33,33,.2); 
+}
+
+.input-bottom {
+    display: block;
+    background:#ffffff63;
+    border-top: 2px;
+    height: 2px;
+    margin-bottom:20px;
+}
+.btn:focus , .fb:focus, .tw:focus, .gl:focus {
+    outline:0;
+}
+
+.btn-container {
+    margin-top: 50px;
+    text-align: center;
+}
+
+.btn-social-container {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.main-heading {
+    color: white;
+    font-size: 30px;
+    font-weight: 500;
+    text-align: center;
+}
+
+.sub-heading {
+    color: white;
+    font-size: 15px;
+    font-weight: 200;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.fb{
+    background-color: #3b5998;
+    color: #fff;
+    transition: linear 0.2s;
+}
+
+.tw{
+    background-color: #1da1f2;
+    color: #fff;
+    transition: linear 0.2s;
+}
+
+.gl{
+    background-color: #cd201f;
+    color: #fff;
+    transition: linear 0.2s;
+}
+
+
+
+.heading-1 {
+    color: #000;
+    font-size: 22px;
+    font-weight: 500;
+    text-align: center;
+}
+
+.copy-text {
+    padding-top: 30px;
+    text-align: center;
+    font-size: 12px;
+    color: #020202;
+}
+
+.user-container {
+    text-align: center;
+    padding-top: 20px;
+}
+
+.user-img:hover {
+    cursor: pointer;
+}
